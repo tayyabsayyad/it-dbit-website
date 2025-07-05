@@ -1,29 +1,29 @@
 @import url(./nav.css);
 @import url(./footer.css);
 
-.bg-color {
+.page-background {
     background-color: #e4e4e7;
 }
 
-.table-bg-colour {
+.table-accent-color {
     color: #69BA5E;
 }
 
-.scroll-container {
+.news-scroll-container {
     overflow: hidden;
 }
 
-.scroll-text {
+.news-scroll-text {
     -moz-transform: translateY(100%);
     -webkit-transform: translateY(100%);
     transform: translateY(100%);
 
-    -moz-animation: my-animation 5s linear infinite;
-    -webkit-animation: my-animation 5s linear infinite;
-    animation: my-animation 5s linear infinite;
+    -moz-animation: news-scroll-animation 5s linear infinite;
+    -webkit-animation: news-scroll-animation 5s linear infinite;
+    animation: news-scroll-animation 5s linear infinite;
 }
 
-.scroll-text:hover {
+.news-scroll-text:hover {
     animation-play-state: paused;
 }
 
@@ -32,7 +32,7 @@
     z-index: 0;
 }
 
-@-webkit-keyframes my-animation {
+@-webkit-keyframes news-scroll-animation {
     from {
         -webkit-transform: translateY(100%);
     }
@@ -42,7 +42,7 @@
     }
 }
 
-@keyframes my-animation {
+@keyframes news-scroll-animation {
     from {
         -moz-transform: translateY(100%);
         -webkit-transform: translateY(100%);
@@ -79,6 +79,10 @@
 .email_links:hover,
 .links:hover {
     color: #167718;
+}
+
+.text-school-bus-yellow-white {
+    color: #f4d03f;
 }
 
 .breadcrumb-classic.list-breadcrumb {

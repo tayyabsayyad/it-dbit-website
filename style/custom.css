@@ -1,5 +1,5 @@
-/* Slideshow Styling */
-.slide-img {
+/* Hero Carousel Styling */
+.hero-carousel-img {
     object-fit: cover;
     height: 500px;
   }
@@ -38,14 +38,14 @@
     75%, 100% { transform: translateY(0%); }
   }
   
-  /* HOD Image */
-  .hod-img {
+  /* HOD Profile Image */
+.hod-profile-img {
     width: 200px;
     border-radius: 10px;
   }
   
-  /* Reusable Card Styles */
-  .custom-card {
+  /* Department Card Styles */
+.department-card {
     border-radius: 16px;
     background: #fff;
     box-shadow: 0 2px 12px rgba(0,0,0,0.07);
@@ -57,10 +57,10 @@
     align-items: stretch;
     min-width: 0;
   }
-  .framed-card {
+  .department-card-framed {
     --frame-color: #148a51;
   }
-  .framed-card::before {
+  .department-card-framed::before {
     content: '';
     position: absolute;
     top: 10px; left: 10px; right: 10px; bottom: 10px;
@@ -69,7 +69,7 @@
     pointer-events: none;
     z-index: 1;
   }
-  .card-content {
+  .department-card-content {
     position: relative;
     z-index: 2;
     padding: 1.5rem 1.25rem;
@@ -79,7 +79,7 @@
     box-sizing: border-box;
     text-align: justify;
   }
-  .card-title {
+  .department-card-title {
     font-weight: 700;
     font-size: 1.5rem;
     color: #1a237e;
@@ -87,21 +87,21 @@
     margin-bottom: 1rem;
     text-align: center;
   }
-  .card-text {
+  .department-card-text {
     font-size: 1.08rem;
     color: #333;
     margin-bottom: 0.5rem;
   }
   @media (max-width: 768px) {
-    .card-title {
+    .department-card-title {
       font-size: 1.2rem;
     }
-    .card-text {
+    .department-card-text {
       font-size: 0.98rem;
     }
   }
   
-  .modern-box-green {
+  .hod-profile-container {
     background: #fff;
     /* border: 3px solid #fff; */
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.10);
@@ -111,7 +111,7 @@
     color: #000;
     margin-bottom: 2rem;
   }
-  .modern-box-green::after {
+  .hod-profile-container::after {
     content: '';
     position: absolute;
     top: 12px;
@@ -123,23 +123,23 @@
     pointer-events: none;
     z-index: 1;
   }
-  .modern-box-green > * {
+  .hod-profile-container > * {
     position: relative;
     z-index: 2;
   }
-  .modern-box-green h4 {
+  .hod-profile-container h4 {
     color: #148a51;
     font-weight: 600;
     margin-bottom: 1rem;
   }
-  .modern-box-green p {
+  .hod-profile-container p {
     color: #222;
     font-size: 1.08rem;
     text-align: justify;
     margin-bottom: 0.7rem;
   }
   @media (max-width: 768px) {
-    .modern-box-green {
+    .hod-profile-container {
       padding: 1.2rem;
     }
   }
@@ -182,7 +182,7 @@
   100% { transform: translateY(-100%); }
 }
 
-.about-us-card {
+.college-about-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -194,19 +194,19 @@
   border-radius: 16px;
   box-shadow: 0 2px 12px rgba(0,0,0,0.07);
 }
-.about-us-card .card-title {
+.college-about-container .department-card-title {
   font-weight: 700;
   font-size: 1.3rem;
   color: #1a237e;
   margin-bottom: 1rem;
 }
-.about-us-card .card-text {
+.college-about-container .department-card-text {
   text-align: justify;
   font-size: 1.05rem;
   color: #333;
 }
 
-.highlights-card {
+.department-highlights-container {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -219,7 +219,7 @@
   position: relative;
   overflow: hidden;
 }
-.highlights-card .card-title {
+.department-highlights-container .department-card-title {
   font-weight: 700;
   font-size: 1.3rem;
   color: #fff;
@@ -227,7 +227,7 @@
   text-align: left;
   width: 100%;
 }
-.highlights-card p.bullet {
+.department-highlights-container p.bullet {
   position: relative;
   padding-left: 1.7em;
   margin-bottom: 0.7rem;
@@ -236,7 +236,7 @@
   text-align: left;
   font-size: 1.05rem;
 }
-.highlights-card p.bullet::before {
+.department-highlights-container p.bullet::before {
   content: '\2022';
   color: #FFFFFF;
   font-size: 1.5em;
@@ -246,7 +246,7 @@
   line-height: 1;
 }
 
-.vision-mission-section h4 {
+.vision-mission-container h4 {
   color: #FFFFFF;
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
@@ -254,11 +254,11 @@
   align-items: center;
   gap: 0.5em;
 }
-.vision-mission-section h4 .bi {
+.vision-mission-container h4 .bi {
   font-size: 1.3em;
   vertical-align: middle;
 }
-.vision-mission-section .card-text {
+.vision-mission-container .department-card-text {
   color: #fff;
   font-size: 1.05rem;
   text-align: left;
@@ -266,7 +266,7 @@
   margin-top: 0;
   padding-left: 0.5em;
 }
-.highlights-card::after {
+.department-highlights-container::after {
   content: '';
   position: absolute;
   top: 10px;
@@ -278,7 +278,7 @@
   pointer-events: none;
   z-index: 1;
 }
-.highlights-card > * {
+.department-highlights-container > * {
   position: relative;
   z-index: 2;
 }
