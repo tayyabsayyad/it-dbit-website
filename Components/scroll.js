@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    let container = document.querySelector(".scroll-text");
+    let container = document.querySelector(".news-scroll-text");
   
     function scrollNews() {
         container.scrollTop += 1; // Moves 1px at a time for smooth scrolling

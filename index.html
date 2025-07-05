@@ -19,7 +19,7 @@
     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" />
   <link rel="stylesheet" href="./style/main.css" />
-  <link rel="stylesheet" href="./style/custom.css" /> <!-- New file for animations and styling -->
+  <link rel="stylesheet" href="./style/custom.css" /> 
   
   <title>DBIT IT</title>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
@@ -34,7 +34,7 @@
 
 </head>
 
-<body class="bg-color">
+<body class="page-background">
 
   <!-- Navbar -->
   <div id="navbar"></div>
@@ -45,18 +45,18 @@
       <!-- Left Section (70%) -->
       <div class="col-md-8 p-3">
 <!-- Slideshow -->
-<div id="carouselExampleIndicators" class="carousel slide border rounded bg-light mb-4" data-bs-ride="carousel" data-bs-wrap="true">
+<div id="hero-carousel" class="carousel slide border rounded bg-light mb-4" data-bs-ride="carousel" data-bs-wrap="true">
   <!-- Indicators -->
-  <div class="carousel-indicators" id="carousel-indicators"></div>
+  <div class="carousel-indicators" id="hero-carousel-indicators"></div>
 
-  <div class="carousel-inner" id="carousel-inner">
+  <div class="carousel-inner" id="hero-carousel-inner">
     <!-- Slides dynamically inserted here -->
   </div>
 
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+  <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
     <span class="carousel-control-prev-icon"></span>
   </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+  <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
     <span class="carousel-control-next-icon"></span>
   </button>
 </div>
@@ -98,8 +98,8 @@
     "./assets/slideshow/slider/7.png"
   ];
 
-  const carouselInner = document.getElementById("carousel-inner");
-  const indicatorsContainer = document.getElementById("carousel-indicators");
+  const carouselInner = document.getElementById("hero-carousel-inner");
+  const indicatorsContainer = document.getElementById("hero-carousel-indicators");
 
   images.forEach((src, index) => {
     // Create slide
@@ -113,14 +113,14 @@
     // Create indicator
     const indicator = document.createElement("button");
     indicator.type = "button";
-    indicator.setAttribute("data-bs-target", "#carouselExampleIndicators");
+    indicator.setAttribute("data-bs-target", "#hero-carousel");
     indicator.setAttribute("data-bs-slide-to", index);
     if (index === 0) indicator.classList.add("active"); // First indicator active
     indicatorsContainer.appendChild(indicator);
   });
 
   // Enable auto-slide with wrap
-  new bootstrap.Carousel(document.getElementById("carouselExampleIndicators"), {
+  new bootstrap.Carousel(document.getElementById("hero-carousel"), {
     interval: 3000, // Auto-slide every 3s
     wrap: true
   });
@@ -131,10 +131,10 @@
   <!-- Left column: two stacked cards -->
   <div class="col-md-4 d-flex flex-column align-items-center">
     <!-- Highlights card above HOD card in left column -->
-    <div id="left-highlights-card" class="card mb-4 shadow-sm w-100 highlights-card">
+    <div id="department-highlights-card" class="card mb-4 shadow-sm w-100 department-highlights-container">
       <br><br><br><br>
       <!-- style="color: #1a237e" -->
-      <h4 class="card-title mb-3"> Highlights</h4>
+      <h4 class="department-card-title mb-3" style="color: white;"> Highlights</h4>
       <p class="bullet">Intake: 60</p>
       <p class="bullet">Degree: B.E.</p>
       <p class="bullet">NAAC<br>Accreditation: 'A'</p>
@@ -144,8 +144,8 @@
       <p class="bullet">Holistic Environment</p>
     </div>
     <!-- HOD card -->
-    <div id="hod-card" class="modern-box-green w-100 mb-4 text-center d-flex flex-column align-items-center justify-content-center" style="width: 100%;">
-      <img src="./assets/hod.JPG" class="hod-img mb-3" alt="HOD Image">
+    <div id="hod-profile-card" class="hod-profile-container w-100 mb-4 text-center d-flex flex-column align-items-center justify-content-center" style="width: 100%;">
+      <img src="./assets/hod.JPG" class="hod-profile-img mb-3" alt="HOD Image">
       <h6><strong>Prof. Sunantha Guruswamy</strong></h6>
       <h6><strong>Head of Department</strong></h6>
       <p>Department of Information Technology</p>
@@ -156,30 +156,30 @@
   <!-- Right column: two stacked cards -->
   <div class="col-md-8 d-flex flex-column align-items-center">
     <!-- About IT Department Card -->
-    <div id="aboutit-card" class="custom-card framed-card mb-4" style="width: 100%;">
-      <div class="card-content">
-        <h4 class="card-title text-center mb-3"><i class="bi bi-info-circle-fill"></i> About IT Department</h4>
-        <p class="card-text">
+    <div id="department-about-card" class="department-card department-card-framed mb-4" style="width: 100%;">
+      <div class="department-card-content">
+        <h4 class="department-card-title text-center mb-3"><i class="bi bi-info-circle-fill"></i> About IT Department</h4>
+        <p class="department-card-text">
           The Department of Information Technology was established in 2001 to cater to the growing demands of technically sound professionals in the IT industry. This program is accredited by the National Board of Accreditation with effect from the Academic Year 2019-2024.
         </p>
-        <p class="card-text">
+        <p class="department-card-text">
           Initially, it started with just 30 seats in the first academic year. However, in the following years, the total intake is 60 seats per year. The department has qualified senior faculty with the state of holistic, socially conscious to facilitate efficient teaching learning process.
         </p>
-        <p class="card-text">
+        <p class="department-card-text">
           The department is headed by (Mrs.) Sunantha Guruswamy. Currently, there are 08 faculty members in Information Technology. The department has six well equipped computer labs with the latest computer systems, with open-source software, and an internet facility through a good broadband wifi system.
         </p>
-        <p class="card-text">
+        <p class="department-card-text">
           All classrooms & labs are well-resourced with amenities such as projector, internet facility. The department has consistently achieved 96% results in academics and with 5% students always above 95%, 93%, 92% in BE, TE, SE respectively.
         </p>
-        <p class="card-text">
+        <p class="department-card-text">
           Also, 70% placement, 25% for higher education with >60 % undergoing internship on weekdays placements is done with companies like CapGemini, Accenture, E&Y, TCS and more.
         </p>
       </div>
     </div>
     <!-- Why Choose IT/DBIT Card -->
-    <div id="whyit-card" class="custom-card mb-4" style="width: 100%;">
-      <div class="card-content">
-        <h4 class="card-title text-center mb-3"><i class="bi bi-star-fill"></i> Why Choose IT @ DBIT?</h4>
+    <div id="department-why-choose-card" class="department-card mb-4" style="width: 100%;">
+      <div class="department-card-content">
+        <h4 class="department-card-title text-center mb-3"><i class="bi bi-star-fill"></i> Why Choose IT @ DBIT?</h4>
         <p>
           The Information Technology department at Don Bosco Institute of Technology is the most coveted branch in Mumbai and in Western countries. It is one of the joint/ twin branches of the computer engineering branch. It is one of the core branches for students interested in pursuing engineering degree and getting placed in IT firms in various functional and non functional roles in Computers. Specializations, such as Business analyst, Data Scientist, Artificial Intelligence, IoT, Security need fundamental and sound knowledge of Computer and technology. An IT engineer graduating from this department will be equipped with this fundamental knowledge and thereafter can choose a career in any of the specializations one is interested in. The curriculum of mumbai university mapps in such a way that the student is aware of current prevailing technologies at the pro level of the current technologies required to switch over the specializations to a certain extent. Students who like technology, statistics, algorithms and design or have a logical approach to understand the requirement and implement the coding can get chosen and can be a perfect fit in this branch very easily. Students with IT degrees have prospects all around the world. Students interested in Placements have a good scope of getting a job in good renowned companies and our placement history speaks a lot about it . The department holds a record of at least 20% of the students who opt and succeed in higher studies in India and abroad, getting admissions for master's in computer engineering  or IT, Master in technology  and master of science  in IIT, IISCs as well as universities in UK/US/Canada/Europe and etc.
 
@@ -196,10 +196,10 @@
 <script>
 // Ensure left cards match the height of their right-side counterparts
 function matchCardHeights() {
-  var aboutIt = document.getElementById('aboutit-card');
-  var whyIt = document.getElementById('whyit-card');
+  var aboutIt = document.getElementById('department-about-card');
+  var whyIt = document.getElementById('department-why-choose-card');
   var empty = document.getElementById('empty-align-card');
-  var hod = document.getElementById('hod-card');
+  var hod = document.getElementById('hod-profile-card');
   if (aboutIt && empty) {
     empty.style.height = aboutIt.offsetHeight + 'px';
   }
@@ -215,7 +215,7 @@ window.addEventListener('resize', matchCardHeights);
 
       <!-- Right Sidebar (30%) -->
       <div class="col-md-4 p-3"  style="height: 400px;">
-        <div id="sidebar-events-wrapper" style="gap: 1rem;">
+        <div id="sidebar-content-wrapper" style="gap: 1rem;">
           <div class="row border rounded bg-light mx-3 justify-content-center">
             <h3 class="py-3 text-center">News and Events</h3>
             <div class="scroll-container mb-5">
@@ -240,22 +240,22 @@ window.addEventListener('resize', matchCardHeights);
             </div>
           </div>
           <!-- Keep the two new cards below -->
-          <div id="news-extra-card" class="row border rounded mx-3 justify-content-center flex-grow-1 mt-3 highlights-card vision-mission-section">
+          <div id="vision-mission-card" class="row border rounded mx-3 justify-content-center flex-grow-1 mt-3 department-highlights-container vision-mission-container">
             <h4 class="mb-2"><i class="bi bi-eye-fill"></i> Vision</h4>
-            <p class="card-text">
+            <p class="department-card-text">
               1. To become a preferred choice for the students and recruiters.<br><br>
               2. To be known for contributions towards Open Source Technology in the education domain.
             </p>
             <br><br><br>
             <h4 class="mb-2"><i class="bi bi-bullseye"></i> Mission</h4>
-            <p class="card-text">
+            <p class="department-card-text">
               1. To provide a conducive environment for teaching-learning and research opportunities for the holistic growth of each individual.<br><br>
               2. To develop expertise in training and application development in the education domain using Open Source Technology.
             </p>
           </div>
-          <div id="flagship-extra-card" class="row mx-3 justify-content-center flex-grow-1 mt-3">
-            <div class="modern-box-green w-100 d-flex flex-column justify-content-center align-items-center p-4">
-              <h4 class="text-center mb-3"><i class="bi bi-info-circle-fill"></i> About College</h4>
+          <div id="college-about-card" class="row mx-3 justify-content-center flex-grow-1 mt-3">
+            <div class="hod-profile-container w-100 d-flex flex-column justify-content-center align-items-center p-4">
+              <h4 class="text-center mb-3" style="color:blue"><i class="bi bi-info-circle-fill"></i> About College</h4>
               <p><strong>Don Bosco Institute of Technology (DBIT)</strong>, established in 2001, is located in Kurla (W), Mumbai. The institute is affiliated to the <strong>University of Mumbai</strong> and approved by <strong>AICTE</strong>.</p>
               <p>DBIT aims to provide quality technical education with a focus on values, innovation, and holistic development. The campus offers modern infrastructure, skilled faculty, active student clubs, and excellent placement opportunities.</p>
               <p>With a strong emphasis on research, entrepreneurship, and community engagement, DBIT has emerged as a preferred choice for engineering aspirants in Mumbai.</p>
@@ -294,11 +294,11 @@ window.addEventListener('resize', matchCardHeights);
   function matchCardHeights() {
     setTimeout(() => {
       try {
-        var aboutIt = document.getElementById('aboutit-card');
-        var whyIt = document.getElementById('whyit-card');
-        var leftHighlights = document.getElementById('left-highlights-card');
-        var newsExtra = document.getElementById('news-extra-card');
-        var flagshipExtra = document.getElementById('flagship-extra-card');
+        var aboutIt = document.getElementById('department-about-card');
+        var whyIt = document.getElementById('department-why-choose-card');
+        var leftHighlights = document.getElementById('department-highlights-card');
+        var newsExtra = document.getElementById('vision-mission-card');
+        var flagshipExtra = document.getElementById('college-about-card');
         
         if (aboutIt && leftHighlights) {
           leftHighlights.style.height = aboutIt.offsetHeight + 'px';
@@ -324,16 +324,3 @@ window.addEventListener('resize', matchCardHeights);
 </body>
 
 </html>
-
-<!--  -->
-<!--placement record 100 perc-->
-<!-- academic passed perctage 100-->
- <!-- avegrae faculty experience - 15+ yrs -->
-<!-- group based learingn -->
- <!-- holistice environment -->
-
- <!-- left -->
-<!-- inteke -60 -->
- <!-- degree - BE -->
-  <!-- accredetion - A -->
-</rewritten_file>

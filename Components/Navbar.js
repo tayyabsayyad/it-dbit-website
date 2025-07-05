@@ -7,21 +7,21 @@ nav.innerHTML = `<div class="container-fluid">
           <div class="container-fluid justify-content-center">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link top-nav-text" aria-current="page" href="https://dbit.in">DBIT Home</a>
+                <a class="nav-link top-navigation-link" aria-current="page" href="https://dbit.in">DBIT Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link top-nav-text" href="http://parent.dbit.in/"
+                <a class="nav-link top-navigation-link" href="http://parent.dbit.in/"
                   >Parent Login</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link top-nav-text" href="https://alumni.dbit.in/">Alumni</a>
+                <a class="nav-link top-navigation-link" href="https://alumni.dbit.in/">Alumni</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link top-nav-text" href="https://elearn.dbit.in/">E-Learn</a>
+                <a class="nav-link top-navigation-link" href="https://elearn.dbit.in/">E-Learn</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link top-nav-text" href="http://dbitlrc.dbit.in/">Library</a>
+                <a class="nav-link top-navigation-link" href="http://dbitlrc.dbit.in/">Library</a>
               </li>
             </ul>
           </div>
@@ -61,7 +61,7 @@ nav.innerHTML = `<div class="container-fluid">
             ></button>
           </div>
           <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 offcanvas-nav">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 mobile-navigation-menu">
               <li class="nav-item text-center">
                 <a class="nav-link active" aria-current="page" href="/index.html">HOME</a>
               </li>

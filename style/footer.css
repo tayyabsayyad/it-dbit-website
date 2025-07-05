@@ -6,11 +6,11 @@
     border-top: 1px solid black !important;
 }
 
-.footer-icon{
+.footer-social-icon{
     font-size: 24px;
 }
 
-.footer-icon:hover{
+.footer-social-icon:hover{
     /* transition: 3000; */
     color: var(--primary_color);
 }
