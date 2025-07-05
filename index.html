@@ -18,8 +18,8 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" />
-  <link rel="stylesheet" href="/style/main.css" />
-  <link rel="stylesheet" href="/style/custom.css" /> <!-- New file for animations and styling -->
+  <link rel="stylesheet" href="./style/main.css" />
+  <link rel="stylesheet" href="./style/custom.css" /> <!-- New file for animations and styling -->
   
   <title>DBIT IT</title>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
@@ -29,143 +29,9 @@
   <script src="./Components/Footer.js" defer></script>
   <script src="./Components/scroll.js" defer></script> <!-- Script for smooth scrolling -->
 
-  <link rel="icon" href="/assets/logo.ico" type="image/x-icon">
+  <link rel="icon" href="./assets/logo.ico" type="image/x-icon">
 
-  <style>
-    @keyframes blinkBlueGold {
-      0%, 100% { color: #FFD700; }
-      50% { color: #007bff; }
-    }
-    .blink-blue-gold {
-      animation: blinkBlueGold 1s infinite;
-    }
-    /* Smooth vertical scroll for sidebar news/events */
-    .scroll-container {
-      position: relative;
-      height: calc(100% - 56px);
-      overflow: hidden;
-      mask-image: linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%);
-      -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%);
-    }
-    .scroll-viewport {
-      height: 100%;
-      width: 100%;
-      overflow: hidden;
-      position: relative;
-    }
-    .scroll-text {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      animation: verticalScroll 12s linear infinite;
-      will-change: transform;
-    }
-    .scroll-text.paused {
-      animation-play-state: paused !important;
-    }
-    @keyframes verticalScroll {
-      0% { transform: translateY(100%); }
-      100% { transform: translateY(-100%); }
-    }
-    .about-us-card {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100%;
-      min-height: 220px;
-      padding: 1.5rem 1rem;
-      background: #fff;
-      border-radius: 16px;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.07);
-    }
-    .about-us-card .card-title {
-      font-weight: 700;
-      font-size: 1.3rem;
-      color: #1a237e;
-      margin-bottom: 1rem;
-    }
-    .about-us-card .card-text {
-      text-align: justify;
-      font-size: 1.05rem;
-      color: #333;
-    }
-    .highlights-card {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      height: 100%;
-      min-height: 220px;
-      padding: 2.5rem 2.2rem;
-      background: #148a51;
-      border-radius: 16px;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.07);
-      position: relative;
-      overflow: hidden;
-    }
-    .highlights-card .card-title {
-      font-weight: 700;
-      font-size: 1.3rem;
-      color: #fff;
-      margin-bottom: 1rem;
-      text-align: left;
-      width: 100%;
-    }
-    .highlights-card p.bullet {
-      position: relative;
-      padding-left: 1.7em;
-      margin-bottom: 0.7rem;
-      margin-top: 0;
-      color: #FFFFFF;
-      text-align: left;
-      font-size: 1.05rem;
-    }
-    .highlights-card p.bullet::before {
-      content: '\2022';
-      color: #FFFFFF;
-      font-size: 1.5em;
-      position: absolute;
-      left: 0.2em;
-      top: 0.1em;
-      line-height: 1;
-    }
-    .vision-mission-section h4 {
-      color: #FFFFFF;
-      font-size: 1.2rem;
-      margin-bottom: 0.5rem;
-      display: flex;
-      align-items: center;
-      gap: 0.5em;
-    }
-    .vision-mission-section h4 .bi {
-      font-size: 1.3em;
-      vertical-align: middle;
-    }
-    .vision-mission-section .card-text {
-      color: #fff;
-      font-size: 1.05rem;
-      text-align: left;
-      margin-bottom: 1.2rem;
-      margin-top: 0;
-      padding-left: 0.5em;
-    }
-    .highlights-card::after {
-      content: '';
-      position: absolute;
-      top: 10px;
-      left: 10px;
-      right: 10px;
-      bottom: 10px;
-      border: 6px solid #fff;
-      border-radius: 12px;
-      pointer-events: none;
-      z-index: 1;
-    }
-    .highlights-card > * {
-      position: relative;
-      z-index: 2;
-    }
-  </style>
+
 </head>
 
 <body class="bg-color">
@@ -279,7 +145,7 @@
     </div>
     <!-- HOD card -->
     <div id="hod-card" class="modern-box-green w-100 mb-4 text-center d-flex flex-column align-items-center justify-content-center" style="width: 100%;">
-      <img src="/assets/hod.JPG" class="hod-img mb-3" alt="HOD Image">
+      <img src="./assets/hod.JPG" class="hod-img mb-3" alt="HOD Image">
       <h6><strong>Prof. Sunantha Guruswamy</strong></h6>
       <h6><strong>Head of Department</strong></h6>
       <p>Department of Information Technology</p>
@@ -358,7 +224,7 @@ window.addEventListener('resize', matchCardHeights);
                   <a href="" target="" class="nav-link blink-blue-gold">Yay!! We are now Autonomuous!</a>
                   <a href="" target="" class="nav-link">BOS Meet 2025 </a>
                   <a href="" target="" class="nav-link">Department  Day 2025   </a>
-                  <a href="/assets/CSI_planner2025.jpg" target="" class="nav-link">CSI Planner  2025  </a>
+                  <a href="./assets/CSI_planner2025.jpg" target="" class="nav-link">CSI Planner  2025  </a>
                 </div>
               </div>
             </div>
@@ -368,7 +234,7 @@ window.addEventListener('resize', matchCardHeights);
             <div class="scroll-container mb-5">
               <div class="scroll-viewport">
                 <div class="scroll-text text-center">
-                  <a href="/assets/slideshow/innovex.png" target="" class="nav-link">Innovex 2025</a>
+                  <a href="./assets/slideshow/innovex.png" target="" class="nav-link">Innovex 2025</a>
                 </div>
               </div>
             </div>
@@ -424,46 +290,35 @@ window.addEventListener('resize', matchCardHeights);
   </script>
 
   <script>
-  // Match new extra sidebar card heights to left main cards
-  function matchSidebarCardHeights() {
-    var aboutIt = document.getElementById('aboutit-card');
-    var whyIt = document.getElementById('whyit-card');
-    var news = document.getElementById('news-card');
-    var flagship = document.getElementById('flagship-card');
-    var newsExtra = document.getElementById('news-extra-card');
-    var flagshipExtra = document.getElementById('flagship-extra-card');
-    if (aboutIt && newsExtra) {
-      newsExtra.style.height = aboutIt.offsetHeight + 'px';
-    }
-    if (whyIt && flagshipExtra) {
-      flagshipExtra.style.height = whyIt.offsetHeight + 'px';
-    }
-    // Keep original matching for top cards if needed
-    if (aboutIt && news) {
-      news.style.height = aboutIt.offsetHeight + 'px';
-    }
-    if (whyIt && flagship) {
-      flagship.style.height = whyIt.offsetHeight + 'px';
-    }
+  // Improved height matching with better timing and error handling
+  function matchCardHeights() {
+    setTimeout(() => {
+      try {
+        var aboutIt = document.getElementById('aboutit-card');
+        var whyIt = document.getElementById('whyit-card');
+        var leftHighlights = document.getElementById('left-highlights-card');
+        var newsExtra = document.getElementById('news-extra-card');
+        var flagshipExtra = document.getElementById('flagship-extra-card');
+        
+        if (aboutIt && leftHighlights) {
+          leftHighlights.style.height = aboutIt.offsetHeight + 'px';
+        }
+        if (aboutIt && newsExtra) {
+          newsExtra.style.height = aboutIt.offsetHeight + 'px';
+        }
+        if (whyIt && flagshipExtra) {
+          flagshipExtra.style.height = whyIt.offsetHeight + 'px';
+        }
+      } catch (error) {
+        console.log('Height matching error:', error);
+      }
+    }, 100);
   }
-  window.addEventListener('DOMContentLoaded', matchSidebarCardHeights);
-  window.addEventListener('resize', matchSidebarCardHeights);
-  </script>
-
-  <script>
-  function matchHighlightsHeights() {
-    var aboutIt = document.getElementById('aboutit-card');
-    var left = document.getElementById('left-highlights-card');
-    var right = document.getElementById('news-extra-card');
-    if (aboutIt && left) {
-      left.style.height = aboutIt.offsetHeight + 'px';
-    }
-    if (aboutIt && right) {
-      right.style.height = aboutIt.offsetHeight + 'px';
-    }
-  }
-  window.addEventListener('DOMContentLoaded', matchHighlightsHeights);
-  window.addEventListener('resize', matchHighlightsHeights);
+  
+  // Run on multiple events to ensure proper timing
+  window.addEventListener('DOMContentLoaded', matchCardHeights);
+  window.addEventListener('load', matchCardHeights);
+  window.addEventListener('resize', matchCardHeights);
   </script>
 
 </body>
@@ -481,3 +336,4 @@ window.addEventListener('resize', matchCardHeights);
 <!-- inteke -60 -->
  <!-- degree - BE -->
   <!-- accredetion - A -->
+</rewritten_file>

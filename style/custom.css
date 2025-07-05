@@ -143,4 +143,143 @@
       padding: 1.2rem;
     }
   }
+
+/* Additional styles from inline CSS for consistency */
+@keyframes blinkBlueGold {
+  0%, 100% { color: #FFD700; }
+  50% { color: #007bff; }
+}
+.blink-blue-gold {
+  animation: blinkBlueGold 1s infinite;
+}
+
+/* Smooth vertical scroll for sidebar news/events */
+.scroll-container {
+  position: relative;
+  height: calc(100% - 56px);
+  overflow: hidden;
+  mask-image: linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%);
+}
+.scroll-viewport {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.scroll-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: verticalScroll 12s linear infinite;
+  will-change: transform;
+}
+.scroll-text.paused {
+  animation-play-state: paused !important;
+}
+@keyframes verticalScroll {
+  0% { transform: translateY(100%); }
+  100% { transform: translateY(-100%); }
+}
+
+.about-us-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  min-height: 220px;
+  padding: 1.5rem 1rem;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+}
+.about-us-card .card-title {
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #1a237e;
+  margin-bottom: 1rem;
+}
+.about-us-card .card-text {
+  text-align: justify;
+  font-size: 1.05rem;
+  color: #333;
+}
+
+.highlights-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+  min-height: 220px;
+  padding: 2.5rem 2.2rem;
+  background: #148a51;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  position: relative;
+  overflow: hidden;
+}
+.highlights-card .card-title {
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #fff;
+  margin-bottom: 1rem;
+  text-align: left;
+  width: 100%;
+}
+.highlights-card p.bullet {
+  position: relative;
+  padding-left: 1.7em;
+  margin-bottom: 0.7rem;
+  margin-top: 0;
+  color: #FFFFFF;
+  text-align: left;
+  font-size: 1.05rem;
+}
+.highlights-card p.bullet::before {
+  content: '\2022';
+  color: #FFFFFF;
+  font-size: 1.5em;
+  position: absolute;
+  left: 0.2em;
+  top: 0.1em;
+  line-height: 1;
+}
+
+.vision-mission-section h4 {
+  color: #FFFFFF;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+.vision-mission-section h4 .bi {
+  font-size: 1.3em;
+  vertical-align: middle;
+}
+.vision-mission-section .card-text {
+  color: #fff;
+  font-size: 1.05rem;
+  text-align: left;
+  margin-bottom: 1.2rem;
+  margin-top: 0;
+  padding-left: 0.5em;
+}
+.highlights-card::after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  border: 6px solid #fff;
+  border-radius: 12px;
+  pointer-events: none;
+  z-index: 1;
+}
+.highlights-card > * {
+  position: relative;
+  z-index: 2;
+}
   
