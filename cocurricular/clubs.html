@@ -2,56 +2,133 @@
 <html lang="en">
 
 <head>
-
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PSDSNMD822"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
-
     gtag('config', 'G-PSDSNMD822');
   </script>
 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
   <link rel="stylesheet" href="../style/main.css">
   <link rel="stylesheet" href="../style/nav.css">
   <link rel="stylesheet" href="../style/footer.css">
+
   <title>Clubs</title>
+
   <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
     crossorigin="anonymous"></script>
   <script defer src="../nav.js"></script>
   <script defer src="/Components/Navbar.js"></script>
+
   <!-- Favicon logo -->
   <link rel="icon" href="/assets/logo.ico" type="image/x-icon">
 </head>
 
 <body class="bg-color">
   <div id="navbar"></div>
-  <!-- <section class ="breadcrumb-classic">
-    <div class="shell">
-        <ul class ="list-breadcrumb">
-          <li><a href="/index.html">Home</a></li>
-          <li ::before > 
-            <a href="/cocurricular/clubs.html">Clubs</a></li>
-        
-        </ul>
+
+  <main class="container-fluid">
+    <div class="row">
+      <!-- Left Section (70%) -->
+      <div class="col-md-8 p-3">
+        <!-- Slideshow -->
+        <div id="carouselExampleIndicators" class="carousel slide border rounded bg-light" data-bs-ride="carousel" data-bs-wrap="true">
+          <div class="carousel-indicators" id="carousel-indicators"></div>
+          <div class="carousel-inner" id="carousel-inner"></div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Right Sidebar (30%) -->
+      <div class="col-md-4 p-3">
+        <div class="row border rounded bg-light mx-3 justify-content-center">
+          <h3 class="py-3 text-center">News and Events</h3>
+          <div class="scroll-container mb-5">
+            <div class="scroll-text text-center">
+              <a href="#" class="nav-link">Graduation Ceremony 2025</a>
+              <a href="#" class="nav-link">Alumni Meet 2025</a>
+              <a href="#" class="nav-link">Department Day 2025</a>
+              <a href="/assets/CSI_planner2025.jpg" class="nav-link">CSI Planner 2025</a>
+            </div>
+          </div>
+        </div>
+        <div class="row border rounded bg-light mt-3 mx-3 justify-content-center" style="height: 270px; overflow: hidden;">
+          <h3 class="py-2 text-center">CSI 2025-26</h3>
+          <div class="table-responsive">
+            <table class="table table-sm table-bordered text-center">
+              <thead class="table-dark">
+                <tr>
+                  <th style="width: 40%;">Name</th>
+                  <th style="width: 60%;">Email</th>
+                </tr>
+              </thead>
+              <tbody style="font-size: 14px;">
+                <tr>
+                  <td>Joel Jose</td>
+                  <td><a href="mailto:joeljoze2005@gmail.com" class="text-decoration-none">joeljoze2005@gmail.com</a></td>
+                </tr>
+                <tr>
+                  <td>Umme Atiya</td>
+                  <td><a href="mailto:ummeatiyaquraishi@gmail.com" class="text-decoration-none">ummeatiyaquraishi@gmail.com</a></td>
+                </tr>
+                <tr>
+                  <td>Lavanya Bhilare</td>
+                  <td><a href="mailto:lavanya.bhilare@gmail.com" class="text-decoration-none">lavanya.bhilare@gmail.com</a></td>
+                </tr>
+                <tr>
+                  <td>Priyans Mehta</td>
+                  <td><a href="mailto:priyans.mehta1712@gmail.com" class="text-decoration-none">priyans.mehta1712@gmail.com</a></td>
+                </tr>
+                <tr>
+                  <td>Masud Shaikh</td>
+                  <td><a href="mailto:shaikhmasud507@gmail.com" class="text-decoration-none">shaikhmasud507@gmail.com</a></td>
+                </tr>
+                <tr>
+                  <td>Savin Johnson</td>
+                  <td><a href="savs2610johnson@gmail.com" class="text-decoration-none">narendradukhande@gmail.com</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- <div class="row border rounded bg-light mt-3 mx-3 justify-content-center" style="height: 300px">
+          <h3 class="py-3 text-center">Flagship Events</h3>
+          <div class="scroll-container mb-5">
+            <div class="scroll-text text-center">
+              <a href="/assets/slideshow/innovex.png" class="nav-link">Innovex 2025</a>
+            </div>
+          </div>
+        </div> -->
+      </div>
     </div>
-  </section> -->
-  <div><br>
-    <h2 class="text-center">Clubs</h2>
+  </main>
+
+  <!-- Clubs Table -->
+  <div class="text-center my-4">
+    <h2>Clubs</h2>
   </div>
+
   <main class="container-fluid">
     <div class="row justify-content-center">
-      <div class="col-md-8 p-0 justify-content-center">
+      <div class="col-md-8">
         <div class="row border rounded my-3 mx-4 py-3 bg-light">
-          <table class="table ">
+          <table class="table">
             <thead class="table-dark">
               <tr>
                 <th scope="col">Clubs</th>
@@ -60,31 +137,152 @@
             </thead>
             <tbody>
               <tr class="bg-white">
-                <th scope="row ">CSI</th>
+                <th scope="row">CSI</th>
                 <td><a class="links" href="https://csi.dbit.in">view</a></td>
               </tr>
-              <tr class="bg-white">
-                <th scope="row ">AI club</th>
-                <td><a class="links" href="/cocurricular/ai_club.html">view</a></td>
-              </tr>
-              <tr>
-                <th scope="row">Web Devlopement club</th>
-                <td><a class="links" href="/cocurricular/web_club.html">view</a></td>
-              </tr>
             </tbody>
-
           </table>
         </div>
       </div>
     </div>
   </main>
-
-  <div style="padding: 2rem;"></div>
+  <div class="row justify-content-center text-center p-3">
+    <div class="row border rounded bg-light mt-4 p-4 fade-in">
+      <div class="col-md-4 text-center">
+        <img src="/assets/faculty_TPC.jpg" style="width: 180px;" alt="Faculty TPC">
+        <h6><strong>Uday </strong></h6>
+        <h6><strong>CSI Incharge</strong></h6>
+        <p>Department of Information Technology</p>
+        <p>uday@dbit.in | 9833348725</p>
+      </div>
+      <div class="col-md-8">
+        <h3 class="mt-4">Plan Activities</h3>
+        <div class="table-responsive">
+          <table border="1" cellspacing="0" cellpadding="10" style="border-collapse: collapse; width: 100%; font-family: Arial, sans-serif;">
+            <thead style="background-color: #4b0082; color: white;">
+              <tr>
+                <th>Event Name</th>
+                <th>Focus Area</th>
+                <th>Date</th>
+                <th>Target Audience</th>
+                <th>Speaker(s) & Designation</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>GenAI & LLMs</td>
+                <td>Gen AI and LLMs</td>
+                <td>Feb 12, 2025</td>
+                <td>TE IT</td>
+                <td>Mr. Devesh Rajadhyax, CEO, Cere Labs</td>
+                <td style="color: darkred;"><strong>Closed</strong></td>
+              </tr>
+              <tr>
+                <td>AI x Blockchain</td>
+                <td>AI and Blockchain, Bitcoin</td>
+                <td>March 4-5, 2025</td>
+                <td>All classes</td>
+                <td>Mr. Himanshu Kumar, CEO, Akaispace</td>
+                <td style="color: darkred;"><strong>Closed</strong></td>
+              </tr>
+              <tr>
+                <td>Design using Canva</td>
+                <td>Canva</td>
+                <td>March 12, 2025</td>
+                <td>SE IT</td>
+                <td>Riean Estvees, Officer - IT & System Assurance (ITSA)</td>
+                <td style="color: darkred;"><strong>Closed</strong></td>
+              </tr>
+              <tr>
+                <td>Django Workshop</td>
+                <td>Django</td>
+                <td>March 19, 2025</td>
+                <td>SE IT</td>
+                <td>CSI Core Team</td>
+                <td style="color: goldenrod;"><strong>Ideation</strong></td>
+              </tr>
+              <tr>
+                <td>Analytics Course</td>
+                <td>DAX & PowerBI</td>
+                <td>April 2, 2025</td>
+                <td>TE IT</td>
+                <td>Nikhita Panchangam</td>
+                <td style="color: green;"><strong>Planned</strong></td>
+              </tr>
+            </tbody>
+          </table>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
   <!-- Footer -->
+  <div style="padding: 2rem;"></div>
   <div id="footer"></div>
   <script src="/Components/Footer.js"></script>
 
+  <!-- Slideshow Script -->
+  <script>
+    const images = [
+      "/assets/slideshow/dbit_it.jpg",
+      "/assets/slideshow/1st_Winners_Codeverse.png",
+      "/assets/slideshow/3rd_Winners_Codeverse.png",
+      "/assets/slideshow/tpc/1.png",
+      "/assets/slideshow/tpc/2.png",
+      "/assets/slideshow/tpc/3.png",
+      "/assets/slideshow/tpc/4.png",
+      "/assets/slideshow/tpc/5.png",
+      "/assets/slideshow/tpc/6.png",
+      "/assets/slideshow/tpc/7.png",
+      "/assets/slideshow/tpc/8.png",
+      "/assets/slideshow/tpc/9.png",
+      "/assets/slideshow/tpc/10.png",
+      "/assets/slideshow/tpc/11.png",
+      "/assets/slideshow/tpc/12.png",
+      "/assets/slideshow/tpc/13.png",
+      "/assets/slideshow/tpc/14.png",
+      "/assets/slideshow/tpc/15.png",
+      "/assets/slideshow/tpc/16.png",
+      "/assets/slideshow/tpc/17.png",
+      "/assets/slideshow/tpc/18.png",
+      "/assets/slideshow/tpc/19.png",
+      "/assets/slideshow/tpc/20.png",
+      "/assets/slideshow/tpc/21.png",
+      "/assets/slideshow/slider/2.png",
+      "/assets/slideshow/slider/3.png",
+      "/assets/slideshow/slider/4.png",
+      "/assets/slideshow/slider/5.png",
+      "/assets/slideshow/slider/6.png",
+      "/assets/slideshow/slider/7.png"
+    ];
+
+    const carouselInner = document.getElementById("carousel-inner");
+    const indicatorsContainer = document.getElementById("carousel-indicators");
+
+    images.forEach((src, index) => {
+      const slide = document.createElement("div");
+      slide.classList.add("carousel-item");
+      if (index === 0) slide.classList.add("active");
+
+      slide.innerHTML = `<img src="${src}" class="d-block w-100" style="object-fit: contain; aspect-ratio: 2 / 1;" alt="Slide ${index + 1}" />`;
+      carouselInner.appendChild(slide);
+
+      const indicator = document.createElement("button");
+      indicator.type = "button";
+      indicator.setAttribute("data-bs-target", "#carouselExampleIndicators");
+      indicator.setAttribute("data-bs-slide-to", index);
+      if (index === 0) indicator.classList.add("active");
+      indicatorsContainer.appendChild(indicator);
+    });
+
+    new bootstrap.Carousel(document.getElementById("carouselExampleIndicators"), {
+      interval: 3000,
+      wrap: true
+    });
+  </script>
 
 </body>
 
